@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from the Git repository
-                git url: 'https://github.com/abhijith3707/iac.git', branch: 'main'
+                git url: 'https://github.com/abhijith3707/iac.git', branch: 'main', credentialsId: 'github2'
             }
         }
 
